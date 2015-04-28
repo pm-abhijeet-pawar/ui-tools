@@ -11,5 +11,5 @@ LoadModule rewrite_module modules/mod_rewrite.so
 Add following lines:  
   
     RewriteEngine on
-    RewriteCond "%{REQUEST_URI}" !^\/(ui\/|AdGainMgmt\/|inventory|common|pmp|castrum|infrastructure)
-    RewriteRule /(.*) /ui/$1 [P]
+    RewriteCond "%{REQUEST_URI}" !^\/(AdGainMgmt\/|inventory|common|pmp|castrum|infrastructure)
+    RewriteRule /(.*) /AdGainMgmt/$1 [P]
